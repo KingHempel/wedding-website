@@ -1,5 +1,6 @@
 import HeroSection from "../components/HeroSection";
 import FAQItem from "../components/FAQItem";
+import { Link } from "react-router-dom";
 
 function Faqs() {
   const heroImage = "/images/hero-faqs.jpg";
@@ -35,9 +36,9 @@ function Faqs() {
               <>
                 We'll miss you, but we understand! Please let us know as soon as
                 possible via the{" "}
-                <a href="rsvp" className="faq-link">
+                <Link to="/rsvp" className="faq-link">
                   RSVP form
-                </a>{" "}
+                </Link>{" "}
                 so we can plan accordingly.
               </>
             }
@@ -68,9 +69,9 @@ function Faqs() {
               <>
                 We've done our best to accommodate a range of dietary needs, but
                 if you have specific concerns, please let us know in the{" "}
-                <a href="rsvp" className="faq-link">
+                <Link to="/rsvp" className="faq-link">
                   RSVP form
-                </a>
+                </Link>
                 .
               </>
             }

@@ -33,7 +33,7 @@ function HeroSection({
       {subTitle && <p className="text-light display-6">{subTitle}</p>}
       {showRsvpButton && (
         <Link
-          to="/rsvp" // Use relative path here
+          to="/rsvp"
           className="btn btn-outline-light rounded-0 border-3 btn-sm mt-3"
           style={{ width: "150px" }}
         >
