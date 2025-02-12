@@ -7,11 +7,7 @@ function Faqs() {
 
   return (
     <>
-      <HeroSection
-        title="Frequently Asked Questions"
-        subTitle="All the answers you need for the day."
-        heroImage={heroImage}
-      />
+      <HeroSection title="Frequently Asked Questions" heroImage={heroImage} />
       <div className="container my-5 h-auto">
         <div className="d-flex flex-column align-items-center">
           <FAQItem

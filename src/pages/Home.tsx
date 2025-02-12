@@ -14,7 +14,13 @@ function Home() {
             Riley Matthew Hempel
           </>
         }
-        subTitle="January 17, 2026, 5:00 PM | The Farm Yarra Valley"
+        subTitle={
+          <>
+            January 17, 2026, 5:00 PM
+            <br />
+            The Farm Yarra Valley
+          </>
+        }
         showRsvpButton={true}
         heroImage={heroImage}
         useCursiveFont={true}

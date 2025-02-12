@@ -6,7 +6,6 @@ function Gallery() {
     <>
       <HeroSection
         title="Photos will be added here after the event."
-        subTitle="Photos will be added here after the event."
         heroImage={heroImage}
       />
       <div className="container my-5 h-auto"></div>

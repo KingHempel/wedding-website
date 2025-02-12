@@ -50,11 +50,7 @@ function Rsvp() {
 
   return (
     <>
-      <HeroSection
-        title="RSVP"
-        subTitle="Please fill out the form below."
-        heroImage={heroImage}
-      />
+      <HeroSection title="RSVP" heroImage={heroImage} />
       <div className="container my-5 h-auto">
         {submitted ? (
           <div className="alert alert-success">

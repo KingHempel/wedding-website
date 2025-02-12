@@ -4,7 +4,7 @@ import "./Style.css";
 
 interface HeroSectionProps {
   title: ReactNode;
-  subTitle?: string;
+  subTitle?: ReactNode;
   showRsvpButton?: boolean;
   heroImage?: string;
   useCursiveFont?: boolean;

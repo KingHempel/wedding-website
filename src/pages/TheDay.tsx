@@ -6,7 +6,6 @@ function TheDay() {
     <>
       <HeroSection
         title="What you can expect on the day..."
-        subTitle="From the beautiful ceremony to party time!"
         heroImage={heroImage}
       />
       <div className="container my-5 h-auto">
