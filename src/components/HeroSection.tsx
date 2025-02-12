@@ -20,7 +20,7 @@ function HeroSection({
     <div
       className="px-4 py-5 text-center hero-image d-flex flex-column align-items-center"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${heroImage}')`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/wedding-website/${heroImage}')`,
       }}
     >
       <h1

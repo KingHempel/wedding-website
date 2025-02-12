@@ -1,24 +1,21 @@
+import { Link, useLocation } from "react-router-dom";
+
 interface NavItemProps {
   path: string;
   title: string;
-  isActive: boolean;
-  setCurrentPage: (path: string) => void;
 }
 
-function NavItem({ path, title, isActive, setCurrentPage }: NavItemProps) {
-  const handleClick = () => {
-    setCurrentPage(path);
-  };
+function NavItem({ path, title }: NavItemProps) {
+  const location = useLocation();
 
   return (
     <li className="nav-item mx-3">
-      <a
-        className={`nav-link ${isActive ? "active" : ""}`}
-        href={path}
-        onClick={handleClick}
+      <Link
+        className={`nav-link ${location.pathname === path ? "active" : ""}`}
+        to={path}
       >
         {title}
-      </a>
+      </Link>
     </li>
   );
 }

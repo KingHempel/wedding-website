@@ -4,14 +4,11 @@ import NavItem from "./NavItem";
 import "./Style.css";
 
 function NavBar() {
-  const [currentPage, setCurrentPage] = useState<string>(
-    window.location.pathname
-  );
   const [isCollapsed, setIsCollapsed] = useState<boolean>(true);
 
   const pages = [
     { path: "/", title: "Home" },
-    { path: "/TheDay", title: "The Day" },
+    { path: "/theday", title: "The Day" },
     { path: "/wedding-party", title: "Wedding Party" },
     { path: "/gallery", title: "Gallery" },
     { path: "/faqs", title: "FAQs" },
@@ -33,13 +30,7 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto justify-content-center">
             {pages.map((page) => (
-              <NavItem
-                key={page.path}
-                path={page.path}
-                title={page.title}
-                isActive={currentPage === page.path}
-                setCurrentPage={setCurrentPage}
-              />
+              <NavItem key={page.path} path={page.path} title={page.title} />
             ))}
           </Nav>
         </Navbar.Collapse>
