@@ -110,6 +110,7 @@ function Rsvp() {
                 type="text"
                 className="form-control"
                 id="dietaryRequirements"
+                placeholder="e.g. Gluten Free"
                 value={dietaryRequirements}
                 onChange={(e) => setDietaryRequirements(e.target.value)}
               />
@@ -122,6 +123,7 @@ function Rsvp() {
                 type="text"
                 className="form-control"
                 id="favouriteKayce"
+                placeholder="Optional"
                 value={favouriteKayce}
                 onChange={(e) => setFavouriteKayce(e.target.value)}
               />
@@ -134,6 +136,7 @@ function Rsvp() {
                 type="text"
                 className="form-control"
                 id="favouriteRiley"
+                placeholder="Optional"
                 value={favouriteRiley}
                 onChange={(e) => setFavouriteRiley(e.target.value)}
               />
