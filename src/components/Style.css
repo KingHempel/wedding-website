@@ -154,12 +154,3 @@ h1 {
 .footer-text:hover {
   color: #474f2f !important;
 }
-
-hr {
-  border: 0;
-  clear: both;
-  display: block;
-  width: 96%;
-  background-color: #ffff00;
-  height: 1px;
-}

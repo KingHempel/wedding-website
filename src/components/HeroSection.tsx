@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Link } from "react-router-dom";
 import "./Style.css";
 
 interface HeroSectionProps {
@@ -31,13 +32,13 @@ function HeroSection({
       <br />
       {subTitle && <p className="text-light display-6">{subTitle}</p>}
       {showRsvpButton && (
-        <a
-          href="Rsvp"
+        <Link
+          to="/rsvp" // Use relative path here
           className="btn btn-outline-light rounded-0 border-3 btn-sm mt-3"
           style={{ width: "150px" }}
         >
           <b className="fs-5">RSVP</b>
-        </a>
+        </Link>
       )}
     </div>
   );
