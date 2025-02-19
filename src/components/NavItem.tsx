@@ -3,9 +3,10 @@ import { Link, useLocation } from "react-router-dom";
 interface NavItemProps {
   path: string;
   title: string;
+  onClick?: () => void;
 }
 
-function NavItem({ path, title }: NavItemProps) {
+function NavItem({ path, title, onClick }: NavItemProps) {
   const location = useLocation();
 
   return (
@@ -13,6 +14,7 @@ function NavItem({ path, title }: NavItemProps) {
       <Link
         className={`nav-link ${location.pathname === path ? "active" : ""}`}
         to={path}
+        onClick={onClick}
       >
         {title}
       </Link>

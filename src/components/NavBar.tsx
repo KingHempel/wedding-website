@@ -18,7 +18,7 @@ function NavBar() {
   return (
     <Navbar
       expand="lg"
-      className={`${isCollapsed ? "bg-transparent" : "bg-dark"}`}
+      className={`${isCollapsed ? "bg-transparent" : "bg-dark bg-gradient"}`}
       onToggle={(expanded: boolean) => setIsCollapsed(!expanded)}
       expanded={!isCollapsed}
     >
@@ -26,11 +26,17 @@ function NavBar() {
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           className="w-100"
+          onClick={() => setIsCollapsed(!isCollapsed)}
         />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto justify-content-center">
             {pages.map((page) => (
-              <NavItem key={page.path} path={page.path} title={page.title} />
+              <NavItem
+                key={page.path}
+                path={page.path}
+                title={page.title}
+                onClick={() => setIsCollapsed(true)}
+              />
             ))}
           </Nav>
         </Navbar.Collapse>
