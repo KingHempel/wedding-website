@@ -12,7 +12,7 @@ function Faqs() {
         <div className="d-flex flex-column align-items-center">
           <FAQItem
             question="When do I need to RSVP by?"
-            answer="We ask to have all guests RSVP by [date]. If you don't RSVP by this date, we will assume you are unable to attend."
+            answer="We ask to have all guests RSVP by 30 November 2025. If you don't RSVP by this date, we will assume you are unable to attend."
           />
           <FAQItem
             question="Can I bring my children?"
@@ -49,7 +49,7 @@ function Faqs() {
           />
           <FAQItem
             question="Will there be transportation or parking available?"
-            answer="Yes, parking is available at The Farm. [Find out more info about courtesy bus and put it here]"
+            answer="Yes, parking is available at The Farm. We are also currently looking into options for a courtesy bus. More info on that soon."
           />
           <FAQItem
             question="What time should I arrive?"
