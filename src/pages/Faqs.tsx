@@ -23,8 +23,12 @@ function Faqs() {
             answer="We kindly ask that all phones and cameras be turned off during the ceremony. We have a photographer capturing the moments, and we'd love for you to be present with us in the moment. Thank you for understanding!"
           />
           <FAQItem
+            question="Can I take photos or videos at the reception?"
+            answer="Absolutely! Once the ceremony is over, feel free to snap away and share your photos with us!"
+          />
+          <FAQItem
             question="Can I bring a plus one?"
-            answer="If your invitation specifies a guest, we'd love to see them there! If not, we are keeping the guest list small and intimate, so only those named on the invitation are invited."
+            answer="To keep things small and intimate, we're only able to invite those listed on the invitation envelope. We appreciate your understanding as we celebrate with our nearest and dearest."
           />
           <FAQItem
             question="What should I do if I can't attend?"
@@ -45,19 +49,25 @@ function Faqs() {
           />
           <FAQItem
             question="Is there a gift registry?"
-            answer="Your presence is gift enough! We do not have a gift registry, however, if you'd like to contribute, there will be a wishing well to drop something in at the venue."
+            answer="Your presence is a gift enough! We do not have a gift registry, however, if you'd like to contribute, there will be a wishing well to drop something in at the venue."
           />
           <FAQItem
             question="Will there be transportation or parking available?"
-            answer="Yes, parking is available at The Farm. We are also currently looking into options for a courtesy bus. More info on that soon."
+            answer={
+              <>
+                Yes, parking is available at The Farm. We are also currently
+                looking into options for a courtesy bus. More info on that in
+                the{" "}
+                <Link to="/rsvp" className="faq-link">
+                  RSVP form
+                </Link>
+                .
+              </>
+            }
           />
           <FAQItem
             question="What time should I arrive?"
             answer="Please plan to arrive 25-30 minutes before the ceremony starts, so we can begin on time without interruptions."
-          />
-          <FAQItem
-            question="Can I take photos at the reception?"
-            answer="Absolutely! Once the ceremony is over, feel free to snap away and share your photos with us!"
           />
           <FAQItem
             question="Will there be any special dietary options?"

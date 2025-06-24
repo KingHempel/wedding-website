@@ -10,6 +10,7 @@ function Rsvp() {
   const [dietaryRequirements, setDietaryRequirements] = useState("");
   const [favouriteKayce, setFavouriteKayce] = useState("");
   const [favouriteRiley, setFavouriteRiley] = useState("");
+  const [courtesyBus, setCourtesyBus] = useState("Please Select");
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -24,10 +25,11 @@ function Rsvp() {
     formData.append("dietaryRequirements", dietaryRequirements);
     formData.append("favouriteKayce", favouriteKayce);
     formData.append("favouriteRiley", favouriteRiley);
+    formData.append("courtesyBus", courtesyBus);
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbx0G7-8ZW2pnDV8GcK2A2ypaZBl3-fQzC0AMfxbfdgTBA1cb_hRQUJ0ducTaVHvJRP-oQ/exec",
+        "https://script.google.com/macros/s/AKfycbxrPsjdvbKpNe50QHh9g8XmgJckXZI5hh2WpXy14gIMcBsPKxF8YmvM6AO8wrNrXxa6Ng/exec",
         {
           method: "POST",
           body: formData,
@@ -140,6 +142,32 @@ function Rsvp() {
                 value={favouriteRiley}
                 onChange={(e) => setFavouriteRiley(e.target.value)}
               />
+            </div>
+            <div className="mb-3">
+              <p className="mb-1 text-muted">
+                At this point, we are exploring transport options for a courtesy
+                bus to collect guests from a station in the Berwick or Pakenham
+                region. We would like to get an estimated number of guests
+                interested before we organise a bus. Once we have a confirmed
+                number of guests who are interested, we will reach out and
+                provide further information regarding transport to and from the
+                venue.
+              </p>
+              <label htmlFor="courtesyBus" className="form-label">
+                Are you interested in a Courtesy Bus?{" "}
+                <span className="text-danger">*</span>
+              </label>
+              <select
+                className="form-select"
+                id="courtesyBus"
+                value={courtesyBus}
+                onChange={(e) => setCourtesyBus(e.target.value)}
+                required
+              >
+                <option value="">Please Select</option>
+                <option value="Yes">Yes I am interested</option>
+                <option value="No">No, I will find my own way there</option>
+              </select>
             </div>
             <button
               type="submit"
