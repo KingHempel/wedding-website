@@ -147,11 +147,11 @@ function Rsvp() {
               <p className="mb-1 text-muted">
                 At this point, we are exploring transport options for a courtesy
                 bus to collect guests from a station in the Berwick or Pakenham
-                region. We would like to get an estimated number of guests
-                interested before we organise a bus. Once we have a confirmed
-                number of guests who are interested, we will reach out and
-                provide further information regarding transport to and from the
-                venue.
+                region at a minimal cost. We would like to get an estimated
+                number of guests interested before we organise a bus. Once we
+                have a confirmed number of guests who are interested, we will
+                reach out and provide further information regarding transport to
+                and from the venue.
               </p>
               <label htmlFor="courtesyBus" className="form-label">
                 Are you interested in a Courtesy Bus?{" "}

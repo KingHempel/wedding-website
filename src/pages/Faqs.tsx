@@ -56,8 +56,8 @@ function Faqs() {
             answer={
               <>
                 Yes, parking is available at The Farm. We are also currently
-                looking into options for a courtesy bus. More info on that in
-                the{" "}
+                looking into options for a courtesy bus at a minimal cost. More
+                info on that in the{" "}
                 <Link to="/rsvp" className="faq-link">
                   RSVP form
                 </Link>
