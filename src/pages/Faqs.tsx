@@ -55,7 +55,7 @@ function Faqs() {
             question="Will there be transportation or parking available?"
             answer={
               <>
-                Yes, parking is available at The Farm. We are also currently
+                Yes, parking is available at the venue. We are also currently
                 looking into options for a courtesy bus at a minimal cost. More
                 info on that in the{" "}
                 <Link to="/rsvp" className="faq-link">

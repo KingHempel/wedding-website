@@ -14,13 +14,6 @@ function Home() {
             Riley Matthew Hempel
           </>
         }
-        subTitle={
-          <>
-            January 17, 2026, 5:00 PM
-            <br />
-            The Farm Yarra Valley
-          </>
-        }
         showRsvpButton={true}
         heroImage={heroImage}
         useCursiveFont={true}
@@ -36,6 +29,9 @@ function Home() {
         <p className="text-center">
           Please take some time to navigate through our website, where you can
           find all the details about our wedding festivities.
+        </p>
+        <p className="text-center">
+          The date and the venue information can be seen on your invitation.
         </p>
       </div>
     </>
