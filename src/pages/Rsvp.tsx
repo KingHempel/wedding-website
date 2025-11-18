@@ -13,6 +13,7 @@ function Rsvp() {
   const [courtesyBus, setCourtesyBus] = useState("Please Select");
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const RSVPS_OPEN = false;
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -54,7 +55,9 @@ function Rsvp() {
     <>
       <HeroSection title="RSVP" heroImage={heroImage} />
       <div className="container my-5 h-auto">
-        {submitted ? (
+        {!RSVPS_OPEN ? (
+          <div className="alert alert-info">RSVPs are now closed.</div>
+        ) : submitted ? (
           <div className="alert alert-success">
             Thank you for your response!
           </div>
