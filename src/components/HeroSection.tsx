@@ -6,6 +6,7 @@ interface HeroSectionProps {
   title: ReactNode;
   subTitle?: ReactNode;
   showRsvpButton?: boolean;
+  showGalleryButton?: boolean;
   heroImage?: string;
   useCursiveFont?: boolean;
 }
@@ -14,6 +15,7 @@ function HeroSection({
   title,
   subTitle,
   showRsvpButton = false,
+  showGalleryButton = false,
   heroImage,
   useCursiveFont = false,
 }: HeroSectionProps) {
@@ -39,6 +41,23 @@ function HeroSection({
         >
           <b className="fs-5">RSVP</b>
         </Link>
+      )}
+      {showGalleryButton && (
+        <>
+          <Link
+            to="https://brittanyevelynphotography.pixieset.com/guestlogin/kr/"
+            className="btn btn-outline-light rounded-0 border-3 btn-sm mt-3"
+            style={{ width: "200px" }}
+            target="_blank"
+          >
+            <b className="fs-5">VIEW GALLERY</b>
+          </Link>
+          <p className="text-light mt-3">
+            Select "Enter As Client".
+            <br />
+            Access key: K&R
+          </p>
+        </>
       )}
     </div>
   );
